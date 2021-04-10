@@ -74,7 +74,7 @@ html{
     display: inline-block;
     width: 2.8em;
     height: 1em;
-    background: red;
+    background: rgb(141, 135, 135);
     border-radius: 1em;
 }
 .button-toggler1::after{
@@ -87,7 +87,7 @@ html{
     border-radius: 100%;
 }
 .button-toggler:checked + .button-toggler1::before{
-    background: #55d069;
+    background: #2e4eb8;
 }
 .button-toggler:checked + .button-toggler1::after{
     left: 32px;
@@ -112,3 +112,6 @@ body{
     background-color: var(--body-bg);
     color: var(--body-color);
 }*/
+a{
+    color: #6830b3;
+}
