@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+.foto-perfil{
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+/*a{
+    color: rgb(145, 143, 143);
+}*/
+.corPrimaria{
+   background-color: hsl(194, 72%, 79%);
+}
+.corSecundaria{
+   background-color: rgba(13, 104, 146, 0.514);
+}
+p{
+    font-family: 'Kiwi Maru', serif;
+    color: black !important;
+}
+.icones {
+    padding-left: 5px;
+}
+.titulosBrancos{
+    /*text-decoration: underline;*/
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(17, 16, 16);
+    font-family: 'Kiwi Maru', serif;
+}
+.titulosVerdes{
+    font-family: 'Kiwi Maru', serif;
+    /*text-decoration: underline;*/
+    text-underline-position: below;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.884);
+}
+/*.textoBranco{
+    color: white !important;
+}*/
+.jumbotron{
+    margin-bottom: 0px;
+}
+.textoFooter{
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-tex{
+    color: white;
+}
+.button-toggler{
+  display: none;  
+}
+.button-toggler1{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+.button-toggler1::before,
+.button-toggler1::after
+{
+    content: "";
+    transition: all 0.3s ease;
+}
+.button-toggler1::before{
+    display: inline-block;
+    width: 2.8em;
+    height: 1em;
+    background: red;
+    border-radius: 1em;
+}
+.button-toggler1::after{
+    position: absolute;
+    top: 0.15em;
+    left: -1px;
+    width: 0.95em;
+    height: 0.99em;
+    background: #fff;
+    border-radius: 100%;
+}
+.button-toggler:checked + .button-toggler1::before{
+    background: #55d069;
+}
+.button-toggler:checked + .button-toggler1::after{
+    left: 32px;
+}
+.button-edit{
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/*:root{
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+}
+
+.dark-mode:root{
+    --body-bg: ##212529;
+    --body-color: #899095;
+    --link-color: #dee2e6;
+}
+body{
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}*/

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/11689aee09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="edri.png" type="icon">
+</head>
+
+<body class="teste">
+    <nav class="corSecundaria navbar navbar-expand-lg navbar-light nav-tex ">
+        <a class="navbar-brand" href="#">Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="button button-edit">
+            <input type="checkbox" class="button-toggler" id="toggler" name="theme"  onclick="entrar()">
+            <label class="button-toggler1" for="toggler"></label>
+         </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#linguagens">Linguagens de Conhecimento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="jumbotron text-center corPrimaria">
+        <div class="container">
+            <img class="foto-perfil" src="edri.png" alt="fotominha">
+            <h1 class="jumbotron-heading titulosBrancos">Edrielle Duarte 👩‍💻 </h1>
+            <p class="lead text-muted">Developer front-end em formação - Estudante de Analise Desenvolvimento de
+                Sistemas.</p>
+            <p>
+                <a href="#contato" class="btn btn-dark my-2">Contato</a>
+                <!--<a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+            </p>
+            <a href="https://www.linkedin.com/in/edrielleduarte/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/edrielleduarte"><i class="icones fab fa-github"></i></a>
+            <a href="https://www.instagram.com/edrielleduarte/"><i class="icones fab fa-instagram"></i></a>
+            <div class="checkbox-container">
+            </div>
+    </section>
+    <div class="album py-5 bg-light" id="projetos">
+        <div class="container">
+            <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="site-1.PNG" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Esse é um projeto que eu desenvolvi em uma das atividades do meu curso.
+                                É um verificador de idade na qual você digita o ano de nascimento, o seu sexo e ao
+                                selecionar verificar, irá aparecer sua idade, sexo e uma imagem informando se você é
+                                jovem, adulto ou idoso. </p>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</Li>
+                                <li>Javascript</li>
+
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Código</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <video src="numcovid-rpa.mp4" width="" height="250" preload="auto" controls autoplay loop>
+                        </video>
+                        <div class="card-body">
+                            <p class="card-text">Automação de Processos - RPA. Nesse projeto foi desenvolvido um bot
+                                para realizar a busca de número de casos de covid-19 no Brasil e em seguida o bot abre
+                                uma planilha no excel e digita o número de casos daquele dia mais a data que foi
+                                realizado a busca e finaliza salvando e fechando todo programa.</p>
+                            <ul>
+                                <li>Automation Anywhere</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Código</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="alura.site.PNG" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"> Conversor de Moeda - Projeto desenvolvido durante uma imersão dev na
+                                qual desenvolvi um conversor de moedas. Só inserir o valor no caso que for comprar em
+                                dolar que o programa executa e passa para o usuário o valor em real. </p>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</Li>
+                                <li>Javascript</li>
+                                <li>GIMP</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="github.com/meuprojeto"><button type="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <!--Colocar o caminho do projeto para o button ser clicado-->
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Código</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Sobre mim-->
+        <section class="jumbotron text-center corPrimaria" id="sobre-mim">
+            <div class="container">
+                <h2 class="jumbotron-heading titulosBrancos" >Sobre mim</h2>
+                <p class="lead">Olá visitante, meu nome é Edrielle Duarte, tenho 25 anos, moro na Serra-ES. Formada no curso técnico em automação industrial e atualmente curso o 3° semestre de Análise Desenvolvimento de Sistemas. Estagiária de desenvolvimento front-end no Grupo Águia Branca.</p>
+            </div>
+        </section>
+        <!--Projetos-->
+        <section class="jumbotron text-center" id="depoimentos">
+            <div class="container">
+                <h2 class="jumbotron-heading text-center titulosBrancos">Depoimentos</h2>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima similique suscipit ea, amet impedit quae praesentium delectus, autem repellendus hic ullam explicabo aliquid eos,
+                         eveniet at aspernatur eligendi. Tempora!</p>
+                         <footer class="blockquote-footer">Someone famous is <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </section> 
+        <!--Linguagens-->
+          <section class="jumbotron text-center corPrimaria" id="linguagens">
+            <div class="container">
+                <h2 class="jumbotron-heading text-center titulosBrancos">Linguagens de Conhecimento</h2>
+                <p class="mb-0">A primeira linguagem de aprendizado foi a Ladder - linguagem de baixo nível - CLP no curso técnico em Automação Industrial, a ladder foi ao nível avançado, após obtive conhecimento básico nas linguagens
+                    c e c++ em seguida aprofundei meus estudos avançados em Python e hoje estou em formação para linguagem na qual quero trabalhar como desenvolvedora web que é HTML, CSS, JAVASCRIPT e suas Frameworks Angular e TypeScript.
+                </p>
+            </div>
+        </section>
+        <!--Contato-->
+        <section class="jumbotron text-center" id="contato">
+            <div>
+                <div class="container-fluid">       
+                    <h3 style="padding-top: 20px" class="text-center titulosBrancos">Disponível para oportunidades</h3>
+                    <a href="mailto:edrielleduarte@gmail.com">  <h4 style="padding-top:10px;margin-bottom: 0px;" class="text-center text-black-50">edrielleduarte@gmail.com</h4></a>
+                  
+                </div>
+            </div>
+        </section>
+     
+        <!--FOOTER-->
+        <footer class="text-center  textoFooter">
+            <p>&copy;EdrielleDuarte</p>
+        </footer>
+        
+    <script src="int.js"></script>
+</body>
+</html>
