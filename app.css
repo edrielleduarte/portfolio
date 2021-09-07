@@ -4,14 +4,12 @@
     width: auto;
     max-width: 100%;
 }
-/*a{
-    color: rgb(145, 143, 143);
-}*/
 .corPrimaria{
    background-color: hsl(194, 72%, 79%);
 }
 .corSecundaria{
    background-color: rgba(13, 104, 146, 0.514);
+   border-radius: 4px;
 }
 p{
     font-family: 'Kiwi Maru', serif;
@@ -55,7 +53,7 @@ html{
 .nav-tex{
     color: white;
 }
-.button-toggler{
+/*.button-toggler{
   display: none;  
 }
 .button-toggler1{
@@ -86,32 +84,81 @@ html{
     background: #fff;
     border-radius: 100%;
 }
+.teste{
+    background-color: black;
+}
 .button-toggler:checked + .button-toggler1::before{
     background: #2e4eb8;
+
 }
 .button-toggler:checked + .button-toggler1::after{
     left: 32px;
-}
+}*/
 .button-edit{
   margin-top: 15px;
   display: inline-block;
 }
-
-/*:root{
-    --body-bg: #fafafa;
-    --body-color: #555;
-    --link-color: #222;
-}
-
-.dark-mode:root{
-    --body-bg: ##212529;
-    --body-color: #899095;
-    --link-color: #dee2e6;
-}
-body{
-    background-color: var(--body-bg);
-    color: var(--body-color);
-}*/
 a{
     color: #432364;
+}
+html {
+    height: 100%;
+    font-family: 'Montserrat';
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #4b4f53;
+    --color-text: #333333;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    margin-top: 10px;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 20px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.1s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - -1px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
 }
