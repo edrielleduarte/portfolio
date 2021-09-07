@@ -1,3 +1,1 @@
-PORTFOLIO EM PRODUÇÃO
-
-Esse portfolio esta em produção...
+https://portfolio-edrielleduarte.vercel.app/
